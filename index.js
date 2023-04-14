@@ -39,7 +39,7 @@ module.exports = alpha = async (alpha, bot) => {
         const pushname = user.full_name;
         const user_id = alpha.message.from.id + " "
         const username = alpha.message.from.username ? alpha.message.from.username : "zeeone_ofc";
-        const isCreator = [alpha.botInfo.username, ...global.OWNER].map(v => v.replace("https://t.me/", '')).includes(alpha.update.message.from.username)
+        //const isCreator = [alpha.botInfo.username, ...global.OWNER].map(v => v.replace("https://t.me/", '')).includes(alpha.update.message.from.username)
         const from = alpha.message.chat.id
 
         const isGroup = alpha.chat.type.includes('group')
@@ -3159,42 +3159,6 @@ ${prefix}nuliskiri Subscribe Ya YT zeeoneofc`)
             }
             break
             default:
-                if (budy.startsWith('=>')) {
-                    if (!isCreator) return reply("Khusus owner")
-
-                    function Return(sul) {
-                        sat = JSON.stringify(sul, null, 2)
-                        bang = util.format(sat)
-                        if (sat == undefined) {
-                            bang = util.format(sul)
-                        }
-                        return reply(bang)
-                    }
-                    try {
-                        reply(util.format(eval(`(async () => { return ${budy.slice(3)} })()`)))
-                    } catch (e) {
-                        reply(util.format(e))
-                    }
-                }
-
-                if (budy.startsWith('> ')) {
-                    if (!isCreator) return reply("Khusus owner")
-                    try {
-                        let evaled = await eval(budy.slice(2))
-                        if (typeof evaled !== 'string') evaled = require('util').inspect(evaled)
-                        await reply(evaled)
-                    } catch (err) {
-                        await reply(util.format(err))
-                    }
-                }
-                if (budy.startsWith('< ')) {
-                    if (!isCreator) return reply("Khusus owner")
-                    try {
-                        return reply(JSON.stringify(eval(`${args.join(' ')}`), null, '\t'))
-                    } catch (e) {
-                        reply(util.format(e))
-                    }
-                }
         }
     } catch (e) {
         alpha.reply(util.format(e))
