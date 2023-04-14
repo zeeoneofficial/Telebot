@@ -1,0 +1,39 @@
+{
+    "name": "alphabot-telegram",
+    "version": "1.0.0",
+    "description": "Alphabot versi telegram",
+    "main": "alpha.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "start": "node alpha.js"
+    },
+    "keywords": [
+        "telegram",
+        "alphabot",
+        "telegraf-api",
+        "telebot",
+        "bot",
+        "telegram-bot"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zeeoneofficial/Alphabot-Telegram.git"
+    },
+    "author": "zeeoneofc",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.24.0",
+        "chalk": "^4.1.0",
+        "child_process": "^1.0.2",
+        "fs": "0.0.1-security",
+        "my-yts-api": "^1.0.2",
+        "node-fetch": "^2.6.1",
+        "os": "^0.1.2",
+        "path": "^0.12.7",
+        "performance-now": "^2.1.0",
+        "util": "^0.12.4",
+        "telegraf": "^4.3.0"
+    }
+}
