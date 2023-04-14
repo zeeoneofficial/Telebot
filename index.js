@@ -39,7 +39,7 @@ module.exports = alpha = async (alpha, bot) => {
         const pushname = user.full_name;
         const user_id = alpha.message.from.id + " "
         const username = alpha.message.from.username ? alpha.message.from.username : "zeeone_ofc";
-        //const isCreator = [alpha.botInfo.username, ...global.OWNER].map(v => v.replace("https://t.me/", '')).includes(alpha.update.message.from.username)
+        const isCreator = OWNER[0].replace("https://t.me/", '') == alpha.update.message.from.username
         const from = alpha.message.chat.id
 
         const isGroup = alpha.chat.type.includes('group')
