@@ -3031,7 +3031,6 @@ ${prefix}nuliskiri Subscribe Ya YT zeeoneofc`)
             case "marble":
             case "marble2":
             case "matrix":
-            case "metal-silver":
             case "metaldark":
             case "metallic2":
             case "minion":
@@ -3131,6 +3130,7 @@ ${prefix}nuliskiri Subscribe Ya YT zeeoneofc`)
             case 'metal-rainbow':
             case 'metal-gold':
             case 'metal-galaxy':
+            case "metal-silver":
             case 'lion':
             case 'wolf-black-white':
             case 'wolf-galaxy':
