@@ -1,4 +1,4 @@
-const fs = require("fs");
+hiconst fs = require("fs");
 const {
    indonesia
 } = require("./language");
@@ -17,7 +17,7 @@ global.APIKeys = {
 //language 
 global.language = indonesia //change indonesia to english if you don't understand the language used by the bot
 
-global.BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN" //create bot here https://t.me/BotFather and get the bot token
+global.BOT_TOKEN = "6389812235:AAHrfGc82zOa5j6B9v4N1S_9r3fdFqbtyKc" //create bot here https://t.me/BotFather and get the bot token
 global.BOT_NAME = "Alphabot-Mdོ" //your bot name
 global.OWNER_NAME = "ᴹᴿ᭄ ZeeoneOfcོ ×፝֟͜×" //your name
 global.OWNER_NUMBER = "62887435047326" //your telegram number
